@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@500&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 	transition: all 0.2s ease;
+}
+
+a {
+	text-decoration: none;
 }
 
 .navbar {
@@ -79,36 +85,76 @@
 	margin-bottom: 60px;
 }
 
-hr {
-	border-top: 5px solid #1a2238 !important;
+.cta-tujuan .text-tujuan {
+	font-size: 18px;
+	letter-spacing: 2px;
 }
 
-.img-tujuan {
-	position: relative;
+.cta-materi {
+	background-color: #d9d9d9;
+	width: 100%;
 }
 
-.particle {
-	position: relative;
-	left: 0;
+.header {
+	letter-spacing: 6px;
 }
 
-.main-img {
-	position: absolute;
-	border-radius: 107px;
-	left: 70px;
-	top: 35px;
+.cta-materi .card {
+	background-color: #5f6c93;
+	height: 246px;
+	box-shadow: -4px 5px 85px -28px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -4px 5px 85px -28px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -4px 5px 85px -28px rgba(0, 0, 0, 0.75);
 }
 
-.cta-text-tujuan {
-	/* position: absolute; */
-	/* top: 120px; */
-	/* right: -70px; */
+.cta-materi .card .card-title {
+	font-family: "Kavoon", sans-serif;
+	letter-spacing: 4px;
+	color: #1a2238;
+}
+
+.cta-materi .card .card-text {
+	color: #e7e7e7;
+}
+
+.cta-materi .card:hover {
+	box-shadow: -4px 5px 85px -66px rgba(255, 255, 255, 0.75);
+	-webkit-box-shadow: -4px 5px 85px -66px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: -4px 5px 85px -66px rgba(255, 255, 255, 0.75);
+	transform: scale(110%);
+}
+
+.footer {
+	background-color: #1a2238;
 }
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 992px) {
+	.svg-tujuan {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+@media only screen and (max-width: 724px) and (min-width: 576px) {
+	.cta-materi .card {
+		height: 340px;
+	}
+}
 @media only screen and (max-width: 600px) {
 	.hero {
 		background-position: left center;
+	}
+}
+@media only screen and (max-width: 460px) {
+	footer.footer .navbar-brand {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 448px) {
+	.svg-tujuan {
+		width: 90%;
 	}
 }
