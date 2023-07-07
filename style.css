@@ -84,10 +84,6 @@ a {
 	background-image: url("images/homehero.png");
 }
 
-.hero-tentang {
-	background-image: url("images/tentanghero.png");
-}
-
 .text-hero {
 	color: #fff;
 	position: absolute;
@@ -270,6 +266,10 @@ a {
 /* END MATERI */
 
 /* TENTANG */
+.hero-tentang {
+	background-image: url("images/tentanghero.png");
+}
+
 .cta-tujuan .text-tujuan-tentang,
 .cta-latbel .text-latbel-tentang,
 .cta-credit .text-credit-tentang {
@@ -286,4 +286,52 @@ a {
 	color: #243e88;
 }
 
-/* ENDTENTANG */
+/* END TENTANG */
+
+/* MATERI BK */
+.hero-bk {
+	background-image: url("images/bkhero.png");
+}
+
+.cta-text-subbab {
+	margin-left: 0;
+}
+
+.subbab-head {
+	font-size: 22px;
+}
+
+.cta-text-subbab ol li a {
+	color: #1a2238;
+	text-decoration: underline;
+}
+
+.cta-text-subbab ol li a:hover {
+	color: #243e88;
+	text-decoration: none;
+}
+
+img.bkthumb {
+	margin-top: -70%;
+}
+/* 
+#materi img:not(img.except) {
+	width: 80%;
+} */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 724px) and (min-width: 576px) {
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 470px) {
+	#materi img.except {
+		width: 230px;
+	}
+}
+@media only screen and (max-width: 416px) {
+}
+/* END MATERI BK */

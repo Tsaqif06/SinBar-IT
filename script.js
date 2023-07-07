@@ -9,6 +9,7 @@ const kelas = (path) => {
 			document.getElementById("bab").innerHTML = "<h1>Error loading page</h1>";
 		});
 };
+
 const navigate = (path) => {
 	fetch(path)
 		.then((response) => response.text())
@@ -19,6 +20,19 @@ const navigate = (path) => {
 		.catch((error) => {
 			console.error(error);
 			document.getElementById("content").innerHTML =
+				"<h1>Error loading page</h1>";
+		});
+};
+
+const materi = (path) => {
+	fetch(path)
+		.then((response) => response.text())
+		.then((materi) => {
+			document.getElementById("materi").innerHTML = materi;
+		})
+		.catch((error) => {
+			console.error(error);
+			document.getElementById("materi").innerHTML =
 				"<h1>Error loading page</h1>";
 		});
 };
