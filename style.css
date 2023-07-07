@@ -314,6 +314,19 @@ a {
 img.bkthumb {
 	margin-top: -70%;
 }
+
+.mt--6 {
+	margin-top: -300px;
+}
+
+.mt--5 {
+	margin-top: -150px;
+}
+
+.mt--4 {
+	margin-top: -100px;
+}
+
 /* 
 #materi img:not(img.except) {
 	width: 80%;
