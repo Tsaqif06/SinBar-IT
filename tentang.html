@@ -23,7 +23,7 @@
 		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 		<!-- stylesheet -->
 		<link rel="stylesheet" href="assets/style/main.css" />
-		<link rel="stylesheet" href="assets/style/home.css" />
+		<link rel="stylesheet" href="assets/style/tentang.css" />
 	</head>
 	<body>
 		<!-- NAV -->
@@ -54,7 +54,7 @@
 						<li class="nav-item mx-3">
 							<a
 								data-replace="Home"
-								class="nav-link px-4 active"
+								class="nav-link px-4"
 								aria-current="page"
 								href="index.html"
 								>Home</a
@@ -71,7 +71,7 @@
 						<li class="nav-item mx-3">
 							<a
 								data-replace="Tentang"
-								class="nav-link px-4"
+								class="nav-link px-4 active"
 								href="tentang.html"
 								>Tentang</a
 							>
@@ -86,83 +86,88 @@
 		<main id="content">
 			<!-- HERO -->
 			<div class="hero-container">
-				<div class="hero hero-home"></div>
+				<div class="hero hero-tentang"></div>
 				<div class="text-center text-hero">
-					<h1 class="display-4 fw-bolder">Selamat Datang di</h1>
-					<p class="display-4 fw-bolder">Website SinBar TI</p>
+					<h1 class="display-4 fw-bolder">Tentang Website</h1>
 				</div>
 			</div>
 			<!-- END HERO -->
 
 			<!-- TUJUAN -->
-			<div class="container cta-tujuan mt-5 pt-5">
+			<div class="container cta-tujuan tujuan-tentang mt-5 pt-5">
 				<div class="row">
-					<div class="col-lg-6 col-12">
-						<img src="assets/images/hometujuan.svg" alt="hometujuan" />
-					</div>
-					<div class="col-lg-6 cta-text-tujuan">
-						<p
-							class="text-tujuan text-lg-start text-center mt-4 ms-lg-5 ps-lg-5 mx-3 fw-bold"
-						>
-							Pembuatan Website ini bertujuan agar pembelajaran melalui materi jauh
-							lebih mudah tanpa harus tatap muka dan bertem langsung. Dengan pembuatan
-							website ini sebagai wadah untuk pengumpulan tugas dan juga pembelajaran
-							materi. Pada khususnya pada pembelajaran informatika, materi akan
-							disimpan dalam bentuk web.
+					<div class="col-lg-7 cta-text-tujuan">
+						<h1 class="fw-bolder text-center">Tujuan</h1>
+						<p class="text-tujuan-tentang text-center mt-4 fw-bold">
+							Website ini dibuat untuk lebih memudahkan mempelajari informatika tanpa
+							harus melakukan tatap muka. Pembelajaran dapat dilakukan dimana saja dan
+							kapan saja. Semakin berkembangnya teknologi, siswa juga diharuskan
+							mengetahui perkembangan teknologi. Website ini juga sebagai wadah media
+							pembelajaran Informatika agar tetap tersimpan dalam Internet dan dapat
+							diakses secara fleksibel.
 						</p>
+					</div>
+					<div class="col-lg-4 ms-lg-5 ps-lg-5 mt-5 d-none d-lg-block">
+						<img src="assets/images/usb.svg" alt="usb" loading="lazy" class="ms-lg-5 ps-lg-5" />
 					</div>
 				</div>
 			</div>
 			<!-- END TUJUAN -->
 
-			<!-- MATERI -->
-			<div class="container-fluid cta-materi">
-				<div class="container">
-					<h1 class="text-center py-5 fw-bolder header">MATERI</h1>
-					<div class="row pb-5">
-						<div class="col-sm-4 mb-3 mb-sm-0 offset-lg-2">
-							<a href="#" onclick="navigate('materi/index.html')">
-								<div class="card overflow-auto">
-									<div class="card-body">
-										<h5 class="card-title mt-4 fw-bold text-center">KELAS X</h5>
-										<p class="card-text mt-lg-5 mt-5 mt-sm-0 pt-2 text-center">
-											Temukan Potensi Tanpa Batas: Mulai Petualanganmu di Dunia
-											Informatika!
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-sm-4">
-							<a href="#" onclick="navigate('materi/index.html')">
-								<div class="card overflow-auto">
-									<div class="card-body">
-										<h5 class="card-title mt-4 fw-bold text-center">Kelas XI</h5>
-										<p class="card-text mt-lg-5 mt-5 mt-sm-0 pt-2 text-center">
-											Terus Maju dan Berkembang: Tumbuhkan Karirmu dengan Pengetahuan
-											Informatika yang Mendalam!
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-sm-4 offset-lg-4 mt-lg-4 mt-md-0 mt-sm-0 mt-3">
-							<a href="#" onclick="navigate('materi/index.html')">
-								<div class="card overflow-auto">
-									<div class="card-body">
-										<h5 class="card-title mt-4 fw-bold text-center">Kelas XII</h5>
-										<p class="card-text mt-lg-5 mt-5 mt-sm-0 pt-2 text-center">
-											Jelajahi Keajaiban Teknologi: Pelajari Informatika dan Temukan
-											Dunia yang Tidak Terbatas!
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
+			<!-- LATAR BELAKANG -->
+			<div class="container cta-latbel latbel-tentang mt-5 pt-5">
+				<div class="row">
+					<div class="col-lg-4 me-lg-5 pe-lg-5 mt-5 d-none d-lg-block">
+						<img
+							src="assets/images/latarbelakang.svg"
+							alt="latarbelakang"
+							class="me-lg-5 pe-lg-5"
+						/>
+					</div>
+					<div class="col-lg-7 cta-text-latbel">
+						<h1 class="fw-bolder text-center">Latar Belakang</h1>
+						<p class="text-latbel-tentang text-center mt-4 fw-bold">
+							Bagaimana dibutuhkannya media pembelajaran yang mudah diakses dan
+							fleksibel melalui pengembangan teknologi? jawabannya dengan mempublikasi
+							ke media internet salah satunya dengan membuat website. Pak Sasongko
+							atau dikenal dengan Pak Sas memutuskan pada media pembelajaran pada
+							kedepannya akan disimpan di web. Dengan Bantuan muridnya, Pak Sas
+							membuat web SinBarTI pada Tahun 2023.
+						</p>
 					</div>
 				</div>
 			</div>
-			<!-- END MATERI -->
+			<!-- END LATAR BELAKANG -->
+
+			<!-- LATAR BELAKANG -->
+			<div class="container cta-credit credit-tentang my-5 py-5">
+				<div class="row mt-5 pt-5">
+					<div class="col-lg-6 cta-text-credit">
+						<h1 class="fw-bolder text-center">Pihak Yang Terlibat</h1>
+						<p class="text-credit-tentang text-start mt-4 fw-bold">
+							Guru Informatika : Mei Dwi Sasongko, S.Kom
+						</p>
+						<p class="text-credit-tentang text-start mt-4 fw-bold">
+							Desain : Bagas Tri Wicaksono, Achmad Royhan Kamil
+						</p>
+						<p class="text-credit-tentang text-start mt-4 fw-bold">
+							Programmer :
+							<a href="https://github.com/Tsaqif06" target="_blank"
+								>Ahmad Tsaqif Al Arifin
+							</a>
+						</p>
+					</div>
+					<div class="col-lg-6 cta-text-credit">
+						<h1 class="fw-bolder text-center">Contact Person</h1>
+						<p class="text-credit-tentang text-center mt-4 fw-bold">
+							<a href="https://wa.me/+6282143322393" target="_blank" class="my-auto">
+								<i class="bi bi-whatsapp me-2"></i> Pak Sas: +62 821-4332-2393
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END LATAR BELAKANG -->
 		</main>
 		<!-- END MAIN CONTENT -->
 
@@ -192,6 +197,6 @@
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/js/script.js"></script>
+		<script src="/assets/js/script.js"></script>
 	</body>
 </html>
