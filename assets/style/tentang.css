@@ -1,0 +1,19 @@
+.hero-tentang {
+	background-image: url("../images/tentanghero.png");
+}
+
+.cta-tujuan .text-tujuan-tentang,
+.cta-latbel .text-latbel-tentang,
+.cta-credit .text-credit-tentang {
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.cta-credit a {
+	color: #1a2238;
+	text-decoration: underline;
+}
+
+.cta-credit a:hover {
+	color: #243e88;
+}
