@@ -17,3 +17,7 @@
 .cta-credit a:hover {
 	color: #243e88;
 }
+
+.cta-credit .contact-person {
+	width: 500px;
+}
