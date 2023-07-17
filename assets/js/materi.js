@@ -1,20 +1,28 @@
-function update_subbab(bab, sub) {
-  // Update bab content
-	fetch(bab + '/' + sub + '.html')
-		.then((response) => response.text())
-		.then((materi) => {
-			document.getElementById("materi").innerHTML = materi;
-		})
-		.catch((error) => {
-			console.error(error);
-			document.getElementById("materi").innerHTML = "<h1>Error loading page</h1>";
-		});
-};
-
-function initialization() {
+function init() {
   const buttons = document.querySelectorAll('.isi-subbab a.nav-subbab');
 
-  // Buttons Event
+  function update_subbab(bab, sub) {
+    // Update bab content
+    fetch(bab + '/' + sub + '.html')
+      .then((response) => {
+        if (!response.ok) throw Error(response.statusText); 
+        return response.text();
+      })
+      .then((materi) => {
+        document.getElementById("subbab").innerHTML = materi;
+      })
+      .catch((error) => {
+        console.error(error);
+        document.getElementById("subbab").innerHTML = "<h1>Error loading page</h1>";
+      })
+      .finally(() => {
+        // Update nav
+        buttons.forEach(button => {button.classList.remove('active')});
+        buttons[parseInt(sub) - 1].classList.add('active');
+      })
+  };
+
+  // Buttons Link Event
   buttons.forEach(button => {
     button.addEventListener('click', e => {
       e.preventDefault();
@@ -24,8 +32,15 @@ function initialization() {
       // update content
       let params = getParams(url);
       update_subbab(params.bab, params.sub);
+      // scroll to subbab
+      document.getElementById("subbab").scrollIntoView();
     })
   });
+
+  // Button Nav Event (Mobile)
+  document.querySelector("#materi .nav-button").addEventListener('click', () => {
+    document.querySelector("#materi nav").classList.toggle("active");
+  })
 
   // Undo Event
   window.addEventListener('popstate', () => {
@@ -44,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .then((nav) => {
       document.getElementById("content").innerHTML = nav;
-      initialization();
+      init();
     })
     .catch((error) => {
       console.error(error);

@@ -7,7 +7,7 @@ function update_bab(kelas) {
 	fetch('materi/' + kelas + '.html')
 		.then((response) => {
       if (!response.ok) throw Error(response.statusText); 
-      return response.text()
+      return response.text();
     })
 		.then((bab) => {
 			document.getElementById("bab").innerHTML = bab;
@@ -15,21 +15,22 @@ function update_bab(kelas) {
 		.catch((error) => {
 			console.error(error);
 			document.getElementById("bab").innerHTML = "<h1>Error loading page</h1>";
-		});
-
-  // Update nav
-  buttons.forEach(button => {button.classList.remove('active')});
-  switch (kelas) {
-    case 'x':
-      buttons[0].classList.add('active');
-      break;
-    case 'xi':
-      buttons[1].classList.add('active');
-      break;
-    case 'xii':
-      buttons[2].classList.add('active');
-      break;
-  }
+		})
+    .finally(() => {
+      // Update nav
+      buttons.forEach(button => {button.classList.remove('active')});
+      switch (kelas) {
+        case 'x':
+          buttons[0].classList.add('active');
+          break;
+        case 'xi':
+          buttons[1].classList.add('active');
+          break;
+        case 'xii':
+          buttons[2].classList.add('active');
+          break;
+      }
+    });
 };
 
 // Buttons Event
