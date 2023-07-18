@@ -316,7 +316,7 @@
 }
 
 #subbab h2 {
-	margin: 2rem 0 1rem;
+	margin: 3rem 0 1.5rem;
 }
 
 #subbab :is(ol, ul) {
@@ -327,6 +327,36 @@
 
 #subbab li {
 	margin-bottom: 8px;
+}
+
+#subbab .list-none {
+	list-style: none;
+	padding-left: 0;
+}
+
+#subbab .title {
+	font-weight: bold;
+	text-align: center;
+}
+
+#subbab :is(.wrapper, .wrap-scroll) {
+	padding: 1rem;
+	margin: 2rem 0;
+	border: 1px solid gray;
+	border-radius: 1rem;
+}
+
+#subbab .wrap-scroll {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+#subbab code {
+	display: inline-block;
+	padding: 2px 5px;
+	color: white;
+	background-color: #1e1e1e;
+	border-radius: 5px;
 }
 
 /* RESPONSIVE */
