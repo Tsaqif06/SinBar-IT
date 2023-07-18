@@ -1,3 +1,4 @@
+/* BAB */
 .materi .header-materi {
 	font-size: 2em;
 	margin: 40px 0 40px 130px;
@@ -138,7 +139,8 @@
 #materi nav {
 	position: sticky;
 	top: 4.5rem;
-	width: 22rem;
+	min-width: 22rem;
+	max-width: 22rem;
 	height: calc(100vh - 4.5rem);
 	background-color: #f4f5f8;
 	border-right: 1px solid #b3b3b3;
@@ -205,6 +207,7 @@
 #materi .backdrop {
 	display: none;
 	position: fixed;
+	pointer-events: none;
 	top: 4.5rem;
 	width: 100vw;
 	height: calc(100vh - 4.5rem);
@@ -257,6 +260,7 @@
 	}
 
 	#materi nav.active ~ .backdrop {
+		pointer-events: fill;
 		background-color: rgba(0, 0, 0, 0.6);
 	}
 
@@ -267,5 +271,67 @@
 
 	#materi nav.active > .nav-button::before {
 		transform: translate(-50%, -50%) rotate(180deg);
+	}
+}
+
+/* SUBBAB ARTICLE */
+
+#subbab {
+	flex-grow: 1;
+	padding: 3rem 2rem;
+}
+
+#subbab .container {
+	max-width: 724px;
+	margin: auto;
+}
+
+#subbab h1 {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+#subbab hr {
+	margin: 2rem 0 3rem;
+}
+
+#subbab p {
+	text-align: justify;
+	text-indent: 2.5rem;
+}
+
+#subbab p.no-indent {
+	text-indent: 0;
+}
+
+#subbab img {
+	display: block;
+	width: 100%;
+	max-width: 400px;
+	margin: 2rem auto;
+}
+
+#subbab img.fill {
+	max-width: unset;
+}
+
+#subbab h2 {
+	margin: 2rem 0 1rem;
+}
+
+#subbab :is(ol, ul) {
+	padding-left: 2.5rem;
+	list-style-position: outside;
+	text-align: justify;
+}
+
+#subbab li {
+	margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 500px) {
+	#subbab {
+		padding: 3rem 1rem;
 	}
 }
