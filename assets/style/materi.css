@@ -291,6 +291,16 @@
 	font-weight: bold;
 }
 
+#subbab h2 {
+	margin: 3rem 0 1.5rem;
+}
+
+#subbab .title {
+	margin: 1rem 0;
+	font-weight: bold;
+	text-align: center;
+}
+
 #subbab hr {
 	margin: 2rem 0 3rem;
 }
@@ -300,7 +310,7 @@
 	text-indent: 2.5rem;
 }
 
-#subbab p.no-indent {
+#subbab .no-indent {
 	text-indent: 0;
 }
 
@@ -311,15 +321,16 @@
 	margin: 2rem auto;
 }
 
-#subbab img.fill {
+#subbab .img-fill {
 	max-width: unset;
 }
 
-#subbab h2 {
-	margin: 3rem 0 1.5rem;
+#subbab .img-small {
+	max-width: 200px;
 }
 
 #subbab :is(ol, ul) {
+	margin: 1rem 0;
 	padding-left: 2.5rem;
 	list-style-position: outside;
 	text-align: justify;
@@ -329,14 +340,17 @@
 	margin-bottom: 8px;
 }
 
-#subbab .list-none {
+#subbab .li-none {
 	list-style: none;
 	padding-left: 0;
 }
 
-#subbab .title {
-	font-weight: bold;
-	text-align: center;
+#subbab code {
+	display: inline-block;
+	padding: 2px 5px;
+	color: white;
+	background-color: #1e1e1e;
+	border-radius: 5px;
 }
 
 #subbab :is(.wrapper, .wrap-scroll) {
@@ -349,14 +363,6 @@
 #subbab .wrap-scroll {
 	max-height: 400px;
 	overflow-y: auto;
-}
-
-#subbab code {
-	display: inline-block;
-	padding: 2px 5px;
-	color: white;
-	background-color: #1e1e1e;
-	border-radius: 5px;
 }
 
 /* RESPONSIVE */
