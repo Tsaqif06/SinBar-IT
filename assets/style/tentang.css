@@ -21,3 +21,11 @@
 .cta-credit .contact-person {
 	width: 500px;
 }
+
+a.underline {
+	text-decoration: underline !important;
+}
+
+a.underline:hover {
+	text-decoration: none !important;
+}
