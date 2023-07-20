@@ -32,6 +32,8 @@ function init() {
       // update content
       let params = getParams(url);
       update_subbab(params.bab, params.sub);
+      // close the nav (mobile)
+      document.querySelector("#materi nav").classList.remove("active");
       // scroll to subbab
       document.getElementById("subbab").scrollIntoView();
     })
