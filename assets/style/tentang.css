@@ -30,6 +30,10 @@ a.underline:hover {
 	text-decoration: none !important;
 }
 
+th {
+	width: 150px;
+}
+
 @media only screen and (max-width: 992px) {
 	.detail-credit p {
 		font-size: 75% !important;
