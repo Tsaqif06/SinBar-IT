@@ -6,7 +6,6 @@
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 	transition: all 0.2s ease-in-out;
-	outline: 1px solid red;
 }
 
 :root {
